@@ -7,7 +7,9 @@ const path = require("path");
 /** @type {import('webpack').Configuration} */
 const developmentConfig = {
   mode: "development",
+  devtool: "cheap-module-source-map",
   devServer: {
+    historyApiFallback: true,
     static: {
       directory: path.join(__dirname, "../dist")
     },
@@ -16,7 +18,6 @@ const developmentConfig = {
   },
   target: "web",
   plugins: [new HotModuleReplacementPlugin(), new ReactRefreshWebpackPlugin()],
-  devtool: "eval-source-map",
 };
 
 module.exports = merge(common, developmentConfig);

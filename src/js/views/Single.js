@@ -1,5 +1,5 @@
 import React from "react";
 
 export const Single = () => {
-  return <div>Hello app 2</div>;
+  return <div className="container">Hello app 2</div>;
 };

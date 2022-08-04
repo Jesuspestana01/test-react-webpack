@@ -10,6 +10,9 @@ module.exports = {
     filename: "[name].[contenthash].js",
     publicPath: "/",
   },
+
+  devtool: "source-map",
+
   module: {
     rules: [
       {
@@ -30,6 +33,7 @@ module.exports = {
   devServer: {
     historyApiFallback: true,
   },
+  performance: { hints: false },
 
   resolve: {
     extensions: [".js", ".json", ".jsx"],

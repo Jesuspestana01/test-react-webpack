@@ -1,0 +1,4 @@
+# Ignore modules installed by NPM and the folder of the modules build by webpack
+
+/node_modules/
+/dist/

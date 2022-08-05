@@ -1,3 +1,5 @@
+// This webpack file take care of starting the server for development of the app.
+
 const ReactRefreshWebpackPlugin = require("@pmmmwh/react-refresh-webpack-plugin");
 const { HotModuleReplacementPlugin } = require("webpack");
 const { merge } = require("webpack-merge");

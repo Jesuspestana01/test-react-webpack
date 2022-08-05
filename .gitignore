@@ -2,3 +2,29 @@
 
 /node_modules/
 /dist/
+.*
+
+!.env.example
+!README.md
+!webpack.common.js
+!package.json
+!webpack.prod.js
+!webpack.dev.js
+
+# ignore compiled files
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# ignore packaged files
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip

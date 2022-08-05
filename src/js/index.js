@@ -1,12 +1,20 @@
-import ReactDOM from "react-dom";
+import ReactDOM from "react-dom/client"; // In order to use React 18 instead of React 17 render. method
 
-/* importing layout to be render with react routers*/
+// Importing layout to be render with react routers*/
 
 import Layout from "./layout.js";
 
-/* importing bootstrap to our bundle and general styles .scss */
+// Importing bootstrap to our bundle and general styles .scss
 
 import "bootstrap";
 import "../styles/index.scss";
+import React from "react";
 
-ReactDOM.render(<Layout />, document.getElementById("root"));
+ReactDOM.createRoot(
+    document.getElementById("root")
+    )
+    .render(
+  <React.StrictMode>
+    <Layout />
+  </React.StrictMode>
+);

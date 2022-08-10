@@ -1,0 +1,6 @@
+/* General Styles of the App. You can create different scss or css files to specific components or views or the app. */
+
+body {
+    background-color: #99ACB6;
+    color: white;
+}

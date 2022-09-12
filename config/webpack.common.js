@@ -57,7 +57,7 @@ module.exports = {
     extensions: [".js", ".json", ".jsx"],
   },
   plugins: [
-    new Dotenv({ safe: true, systemvars: true}),
+    new Dotenv({ safe: true, systemvars: true, allowEmptyValues: true}),
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       template: "./public/root.html",
